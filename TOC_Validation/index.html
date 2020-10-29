@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="box">
+        <form id="form" action="" onsubmit="returnvalidateForm">
+            <h1>Form Validation</h1>
+           <input type="text" name="username" id="username" autocomplete="off"
+            required placeholder="Enter your Full Name"><br>
+            <input type="password" name="password" id="password" autocomplete="off" required onkeydown="psvalidation()" placeholder="Enter Password"><br>
+            <input type="email" name="email" id="email" autocomplete="off" required placeholder="Enter valid email id" onkeydown="evalidation()"><span id="text"></span><br>
+            <input type="tel" name="phoneno" id="phoneno" autocomplete="off" required placeholder="Enter your mobile number" onkeydown="pvalidation()"><br>
+            <input type="submit" value="Submit"> 
+        </form>
+    </div>
+</body>
+</html>

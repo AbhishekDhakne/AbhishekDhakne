@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgb(6,255,255),rbg(6,255,6),transform(-50%,-50%));
+}
+
+.box form{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*background: #191919;*/
+  text-align: center;
+}
+
+.box h1{
+    color: rgb(6, 255, 255);
+    /*text-transform: uppercase;*/
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+.box input[type = "text"],.box input[type = "password"],.box input[type = "tel"],.box input[type = "email"]{
+    border:0;
+    /*background: none;*/
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type = "email"]:focus,.box input[type = "tel"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+
+#form .inputBox{
+    position: relative;
+}
+
+#form.invalid .inputBox::before
+{
+    content: ' ';
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background-image: url(invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+#form.valid .inputBox::before
+{
+    content: ' ';
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background-image: url(valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#form.invalid1 .inputBox::before
+{
+    content: ' ';
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background-image: url(invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+#form.valid1 .inputBox::before
+{
+    content: ' ';
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background-image: url(valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
